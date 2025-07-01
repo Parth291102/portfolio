@@ -428,10 +428,10 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="profile-container">
-                <img src="your-image.jpg" alt="Parth Parikh" class="profile-img">
+                <img src="portfolio.jpg" alt="Parth Parikh" class="profile-img">
             </div>
             <h1>Parth Parikh</h1>
-            <p class="tagline">Data Science & Machine Learning Enthusiast | Business Strategy & Analytics | Driving Data-Driven Decision Making | North Carolina State University, MCS | Ex-ITNU (Nirma University), ECE</p>
+            <p class="tagline">Machine Learning Intern @ ARoS Lab | NLP & LLM Optimization | Data Science | Agentic AI | Ex-Data Science Intern @ Cygnet Infotech | MCS @ NCSU</p>
         </section>
 
         <!-- About Section -->
@@ -484,6 +484,8 @@
                 <span>Oracle</span>
                 <span>Tableau</span>
                 <span>Power BI</span>
+                <span>Apache Spark</span>
+                <span>Hadoop</span>
             </div>
         </div>
 
@@ -498,6 +500,7 @@
                 <span>Deep Learning</span>
                 <span>Natural Language Processing</span>
                 <span>Computer Vision</span>
+                <span>Agentic AI</span>
             </div>
         </div>
 
@@ -515,6 +518,9 @@
                 <span>Seaborn</span>
                 <span>PyTorch</span>
                 <span>Gradio</span>
+                <span>PySpark</span>
+                <span>OpenCV</span>
+                <span>LangChain</span>
             </div>
         </div>
 
@@ -527,6 +533,9 @@
                 <span>MS-Office</span>
                 <span>Flask</span>
                 <span>Streamlit</span>
+                <span>Git</span>
+                <span>Docker</span>
+                <span>ffmpeg</span>
             </div>
         </div>
     </div>
@@ -538,6 +547,13 @@
             <div class="timeline-container">
         <div class="timeline-line"></div>
 
+        <!-- ARoS Lab Internship -->
+        <div class="timeline-item">
+            <div class="timeline-date">May 2025 - Aug 2025</div>
+            <h3>Machine Learning Research Intern, ARoS Lab, NC State University</h3>
+            <p>Built Sava, a voice-interactive medical bot using Whisper + LLaMA 3.5 with quantized models (GGUF, 8-bit) for low-latency response on Jetson. Enabled real-time transcription, sentiment detection, and speech via Pepper robot. Created an AI agent to fact-check phosphorus research using GPT-4o mini, PDF-to-Markdown extraction, and scientific reasoning APIs.</p>
+        </div>
+
         <!-- NC State University -->
         <div class="timeline-item">
             <div class="timeline-date">Aug 2024 - Present</div>
@@ -545,6 +561,9 @@
             <p>Master of Computer Science (Anticipated May 2026)<br>
             GPA: 3.833/4<br>
             <p class="coursework">Relevant Coursework: Design & Analysis of Algorithms, Software Engineering, Neural Networks, Database Systems, Foundations of Data Science</p>
+            <ul style="padding-left: 20px;">
+            <li><strong>Graduate Teaching Assistant</strong> – CSC 246: Operating Systems for Computer Scientists <em>(May 2025 – Present)</em></li>
+            </ul>
         </div>
 
         <!-- Cygnet Infotech Internship -->
@@ -578,6 +597,51 @@
             <!-- Add project grids -->
             <!-- All Projects -->
             <div class="projects-grid" id="all-projects">
+                <!-- Deepfake Detection Project -->
+            <div class="project-card" data-category="ds-ml">
+            <h3>Scientific Reasoning Agent for Research Fact-Checking</h3>
+            <div class="project-meta">
+                <span class="project-category">Agentic AI & NLP</span>
+            </div>
+            <div class="project-details">
+                <p>Built an AI agent to validate phosphorus sustainability research by extracting structured content from PDFs using PDFExtract and Camelot, converting data into LLM-ready Markdown. Leveraged GPT-4o mini to dynamically invoke physics and chemistry APIs based on context and assessed claims by comparing outputs with Retraction Watch ground truth using similarity scoring.</p>
+            </div>
+            <div class="project-tags">
+                <span class="tag">Agentic AI</span>
+                <span class="tag">GPT-4o</span>
+                <span class="tag">PDFExtract</span>
+                <span class="tag">Camelot</span>
+                <span class="tag">Scientific Reasoning</span>
+                <span class="tag">Markdown Conversion</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Python</span>
+                <span class="tag">LLMs</span>
+            </div>
+        </div>
+
+                <!-- Sava Project -->
+            <div class="project-card" data-category="ds-ml">
+                <h3>Sava – Voice-Interactive Medical Assistant Bot</h3>
+                <div class="project-meta">
+                    <span class="project-category">Applied ML & LLM Engineering</span>
+                </div>
+                <div class="project-details">
+                    <p>Developed a real-time voice-based medical assistant using Whisper and Phi 3.5 LLaMA for transcription, sentiment detection, and response generation via Pepper robot on Jetson. Reduced latency by 50% using GGUF Q4_K_M quantization (Llama.cpp), 8-bit Faster-Whisper, and FFmpeg-based audio communication.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Whisper</span>
+                    <span class="tag">LLM Quantization</span>
+                    <span class="tag">Llama.cpp</span>
+                    <span class="tag">Jetson</span>
+                    <span class="tag">FFmpeg</span>
+                    <span class="tag">GGUF</span>
+                    <span class="tag">QLoRA</span>
+                    <span class="tag">LoRA</span>
+                    <span class="tag">Pepper Robot</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+
                 <!-- Deepfake Detection Project Repeated -->
             <div class="project-card" data-category="ds-ml">
                 <h3>Deepfake Image Detection System</h3>
@@ -684,7 +748,7 @@
             <div class="project-details">
                 <p>Developed full-stack HR analytics platform with Python/Flask and MongoDB, integrating NLP-powered resume screening (n-grams, transformers) 
                 and predictive models (Gradient Boosting, SVM) for candidate assessment and employee sentiment analysis. Achieved 40% HR efficiency 
-                improvement through automated workflows and chatbot integration.</p>
+                improvement through automated workflows and RAG chatbot integration.</p>
             </div>
             <div class="project-tags">
                 <span class="tag">Python</span>
@@ -754,6 +818,51 @@
             <!-- Data Science/ML Projects -->
             <div class="projects-grid" id="ds-ml-projects" style="display: none;">
                 <!-- ML projects here -->
+                <!-- Agentic AI Project -->
+            <div class="project-card" data-category="ds-ml se">
+            <h3>Scientific Reasoning Agent for Research Fact-Checking</h3>
+            <div class="project-meta">
+                <span class="project-category">Agentic AI & NLP</span>
+            </div>
+            <div class="project-details">
+                <p>Built an AI agent to validate phosphorus sustainability research by extracting structured content from PDFs using PDFExtract and Camelot, converting data into LLM-ready Markdown. Leveraged GPT-4o mini to dynamically invoke physics and chemistry APIs based on context and assessed claims by comparing outputs with Retraction Watch ground truth using similarity scoring.</p>
+            </div>
+            <div class="project-tags">
+                <span class="tag">Agentic AI</span>
+                <span class="tag">GPT-4o</span>
+                <span class="tag">PDFExtract</span>
+                <span class="tag">Camelot</span>
+                <span class="tag">Scientific Reasoning</span>
+                <span class="tag">Markdown Conversion</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Python</span>
+                <span class="tag">LLMs</span>
+            </div>
+        </div>
+        
+                <!-- Sava Project -->
+            <div class="project-card" data-category="ds-ml">
+                <h3>Sava – Voice-Interactive Medical Assistant Bot</h3>
+                <div class="project-meta">
+                    <span class="project-category">Applied ML & LLM Engineering</span>
+                </div>
+                <div class="project-details">
+                    <p>Developed a real-time voice-based medical assistant using Whisper and Phi 3.5 LLaMA for transcription, sentiment detection, and response generation via Pepper robot on Jetson. Reduced latency by 50% using GGUF Q4_K_M quantization (Llama.cpp), 8-bit Faster-Whisper, and FFmpeg-based audio communication.</p>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Whisper</span>
+                    <span class="tag">LLM Quantization</span>
+                    <span class="tag">Llama.cpp</span>
+                    <span class="tag">Jetson</span>
+                    <span class="tag">FFmpeg</span>
+                    <span class="tag">GGUF</span>
+                    <span class="tag">QLoRA</span>
+                    <span class="tag">LoRA</span>
+                    <span class="tag">Pepper Robot</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+
                  <!-- Deepfake Detection Project Repeated -->
             <div class="project-card" data-category="ds-ml">
                 <h3>Deepfake Image Detection System</h3>
